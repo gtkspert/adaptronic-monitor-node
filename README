@@ -1,5 +1,7 @@
 Adaptronic Monitoring using Node.JS
 
+This is written using Node.js v0.5.0 (old - sorry!)
+
 First off, apologies for the uglyness of the code. This is my first go at a node.js app.
 
 main.js contains the server used to query the ecu, inject modbus requests, and multicast datapoints.
