@@ -1,0 +1,15 @@
+Adaptronic Monitoring using Node.JS
+
+First off, apologies for the uglyness of the code. This is my first go at a node.js app.
+
+main.js contains the server used to query the ecu, inject modbus requests, and multicast datapoints.
+
+hud.js is a console based monitor, which lists all the current raw values (soon to be the actual values)
+
+ecu-datapoints.js contains the datapoint definitions for this ecu, including a math definition to divide/multiply the raw data by.
+
+Adler32.js is a javascript function used to ensure that the multicasted JSON string is correct (given it's a UDP packet)
+
+ecumanager.js contains the class to send and recieve commands to and from the ecu.
+
+multicast.js contains the class to send the multicast commands to your endpoint.
